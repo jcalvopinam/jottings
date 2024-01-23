@@ -298,6 +298,14 @@ docker network disconnect 5850a9fe5422 aae2f44c8c19
 docker volume ls
 ```
 
+- Volume associate to a container
+```shell
+docker ps -a --filter volume=<volume-name | volume-id>
+
+# sample
+docker ps -a --filter volume=3d762c2860e88d331bcbf79352f10edbdfe3e10632dc0f6a4374979431b0ab08
+```
+
 ### Create volume
 ```shell
 docker volume create <volume-name>
