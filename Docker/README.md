@@ -3,6 +3,7 @@
 ## General considerations
 - If you don't specify the port, it's not going to open up any ports at all in your local machine
 
+---
 ## Instances
 ### List Instances
 ```shell
@@ -145,7 +146,7 @@ docker top my-instance-name
 docker top aae2f44c8c19
 ```
 
-
+---
 ## Images
 
 ### List images
@@ -178,7 +179,7 @@ docker image inspect my-image-name
 docker image inspect 7462b00f9003
 ```
 
-
+---
 ## Inside docker
 ```shell
 docker exec -it <name|container-id> /bin/bash
@@ -197,7 +198,7 @@ docker run -p <external-port:internal-port> --rm -it <image-name|image-id>:<vers
 docker run -p 3306:3306 --rm -it mysql:8 /bin/bash
 ```
 
-
+---
 ## Build instance
 ```shell
 docker build -t <instance-name>:<version> . 
@@ -214,7 +215,7 @@ docker build -t <instance-name>:<version> . -f </path/Dockerfile>
 docker build -t my-new-instance-name:1.0.0 . -f ./my-folder/Dockerfile
 ```
 
-
+---
 ## Copy files
 
 ### From local to instance
@@ -238,7 +239,7 @@ docker cp aae2f44c8c19:/apps/file.txt ./my-folder/file.txt
 
 ```
 
-
+---
 ## Network
 
 ### Create network
@@ -290,7 +291,7 @@ docker network disconnect my-network-name my-instance-name
 docker network disconnect 5850a9fe5422 aae2f44c8c19
 ```
 
-
+---
 ## Volumes
 
 ### List volume

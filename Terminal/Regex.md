@@ -1,12 +1,12 @@
 # Useful regex
 
 ## Find all duplicated lines
-```js
+```shell
 ^(.*)(\n\1)+$
 ```
 
 ## Find duplicated lines including empty lines
-```js
+```shell
 ((^[^\S$]*?(?=\S)(?:.*)+$)[\S\s]*?)^\2$(?:\n)?
 ```
 

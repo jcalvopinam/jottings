@@ -1,4 +1,4 @@
-# Bash commands
+# :luc_terminal:Bash commands
 
 ## Delete duplicated lines
 ```shell

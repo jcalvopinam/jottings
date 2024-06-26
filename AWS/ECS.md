@@ -1,5 +1,3 @@
-# ECS
-
 ## Cluster
 Es como una red general en la que se encuentran todos nuestros servicios, que a su vez cada servicio ejecutan las tareas que contiene contenedores manejando el tráfico de entrada asignado, un puerto específico y una IP pública que se le asigne de forma automática.
 
@@ -31,9 +29,9 @@ Es como una red general en la que se encuentran todos nuestros servicios, que a 
 	- Memory Limits (MiB) Soft Limit: `256`
 	- Port Mapping: `8001`
 	- Environment variables
-| key     | Value          |
-| ------- | -------------- |
-| PORT    | 8001           |
-| DB_HOST | localhost:3306 | 
-| ...     |                |
-	
+
+| key     | Value          |     |
+| ------- | -------------- | --- |
+| PORT    | 8001           |     |
+| DB_HOST | localhost:3306 |     |
+| ...     |                |     |
