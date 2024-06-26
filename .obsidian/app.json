@@ -1,1 +1,14 @@
-/Users/jcalvopinam/space/config-files/obsidian/.obsidian/app.json
+{
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "strictLineBreaks": false,
+  "spellcheck": true,
+  "attachmentFolderPath": "./assets",
+  "livePreview": true,
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true,
+  "showFrontmatter": false,
+  "showLineNumber": true,
+  "propertiesInDocument": "source"
+}

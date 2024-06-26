@@ -1,1 +1,20 @@
-/Users/jcalvopinam/space/config-files/obsidian/.obsidian/core-plugins.json
+[
+  "file-explorer",
+  "global-search",
+  "switcher",
+  "graph",
+  "backlink",
+  "outgoing-link",
+  "tag-pane",
+  "page-preview",
+  "daily-notes",
+  "templates",
+  "command-palette",
+  "slash-command",
+  "editor-status",
+  "bookmarks",
+  "outline",
+  "audio-recorder",
+  "workspaces",
+  "file-recovery"
+]

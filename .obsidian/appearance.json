@@ -1,1 +1,20 @@
-/Users/jcalvopinam/space/config-files/obsidian/.obsidian/appearance.json
+{
+  "theme": "system",
+  "translucency": false,
+  "cssTheme": "Border",
+  "baseFontSize": 17,
+  "accentColor": "",
+  "showViewHeader": true,
+  "baseFontSizeAction": true,
+  "interfaceFontFamily": "Inter",
+  "monospaceFontFamily": "Hack Nerd Font Mono",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "cursor",
+    "autofading",
+    "checkbos-styles",
+    "file-folder-icons",
+    "editor",
+    "checkbox-styles"
+  ]
+}
