@@ -37,3 +37,8 @@ echo "activities.product.getAlias=product-getAlias" | grep -o '[^=]*$'
 
 * Select the first `7`  characters: `^.{7}`
 
+## Date
+- Select dates grater than specific hour. E.g 19h
+```sh
+echo "omnichannel.log" | grep -E '^.*\b(19|2[0-3]):[0-5][0-9]:[0-5][0-9],[0-9]{3}\b'
+```
