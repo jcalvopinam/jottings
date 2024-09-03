@@ -6,13 +6,13 @@
 ---
 ## Instances
 ### List Instances
-```shell
+```sh title:command
 docker ps -a
 ```
 
 ### Start instance
 - To start some instances is required named with spaces
-```shell
+```sh title:command
 docker start <name|container-id> <name|container-id>
 
 # sample
@@ -23,7 +23,7 @@ docker start aae2f44c8c19 af8c0ab27b5b
 
 ### Stop instance
 - To stop some instances is required named with spaces
-```shell
+```sh title:command
 ddocker stop <name|container-id> <name|container-id>
 
 # sample
@@ -33,7 +33,7 @@ docker stop aae2f44c8c19 af8c0ab27b5b
 ```
 
 ### Run instance
-```shell
+```sh title:command
 docker run -p <external-port:internal-port> <image-name|image-id>:<version>
 
 # sample
@@ -41,7 +41,7 @@ docker run -p 3306:3306 mysql:8
 ```
 
 #### Run instance detach 
-```shell
+```sh title:command
 docker run -d -p <external-port:internal-port> <image-name|image-id>:<version>
 
 # sample
@@ -49,7 +49,7 @@ docker run -d -p 3306:3306 mysql:8
 ```
 
 #### Run named instance detach 
-```shell
+```sh title:command
 docker run --name <instance-name> -d -p <external-port:internal-port> <image-name|image-id>:<version>
 
 # sample
@@ -58,7 +58,7 @@ docker run --name my-instance-name -d -p 3306:3306 mysql:8
 
 #### Run instance with environment variables
 - For each environment variable is required to use `-e` prefix
-```shell
+```sh title:command
 docker run --name <instance-name> -d -p <external-port:internal-port> -e <IMAGE-VARIABLE1=value> -e <IMAGE-VARIABLE2=value> <image-name|image-id>:<version>
 
 # sample
@@ -66,7 +66,7 @@ docker run --name my-instance-name -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=sasa -
 ```
 
 ### Attach instance
-```shell
+```sh title:command
 docker attach <name|container-id>
 
 docker attach my-instance-name
@@ -75,7 +75,7 @@ docker attach aae2f44c8c19
 ```
 
 ### Show log
-```shell
+```sh title:command
 docker logs <name|container-id>
 
 # sample
@@ -85,7 +85,7 @@ docker logs aae2f44c8c19
 ```
 
 #### Show log attached
-```shell
+```sh title:command
 docker logs -f <name|container-id>
 
 # sample
@@ -96,7 +96,7 @@ docker logs -f aae2f44c8c19
 
 ### Delete instance
 - To delete some instances is required named with spaces
-```shell
+```sh title:command
 docker rm <name|container-id> <name|container-id>
 
 # sample
@@ -106,7 +106,7 @@ docker rm my-instance-name1 my-instance-name2 my-instance-name3
 ```
 
 #### Delete instance after stop it
-```shell
+```sh title:command
 docker run -d -p <external-port:internal-port> --rm <image-name|image-id>:<version>
 
 # sample
@@ -114,12 +114,12 @@ docker run -d -p 3306:3306 --rm mysql:8
 ```
 
 #### Delete all instances
-```shell
+```sh title:command
 docker container prune
 ```
 
 ### Inspect instance
-```shell
+```sh title:command
 docker inspect <name|container-id>
 
 # sample
@@ -129,7 +129,7 @@ docker inspect aae2f44c8c19
 ```
 
 ### Restart instance automatically in failure case
-```shell
+```sh title:command
 docker run -d -p <external-port:internal-port> --restart always <image-name|image-id>:<version>
 
 # sample
@@ -137,7 +137,7 @@ docker run -d -p 3306:3306 --restart always mysql:8
 ```
 
 ### Process running inside the instance
-```shell
+```sh title:command
 docker container top <name|container-id>
 
 # sample
@@ -150,12 +150,12 @@ docker top aae2f44c8c19
 ## Images
 
 ### List images
-```shell
+```sh title:command
 docker images 
 ```
 
 ### Delete images 
-```shell
+```sh title:command
 docker rmi [<name|container-id>]
 
 # sample
@@ -165,12 +165,12 @@ docker rmi 7462b00f9003
 ```
 
 ### Delete all images 
-```shell
+```sh title:command
 docker image prune
 ```
 
 ### Inspect images 
-```shell
+```sh title:command
 docker image inspect <image-name|image-id>:<version>
 
 # sample
@@ -181,7 +181,7 @@ docker image inspect 7462b00f9003
 
 ---
 ## Inside docker
-```shell
+```sh title:command
 docker exec -it <name|container-id> /bin/bash
 
 # sample
@@ -191,7 +191,7 @@ docker exec -it aae2f44c8c19 /bin/bash
 ```
 
 #### Run image and inside 
-```shell
+```sh title:command
 docker run -p <external-port:internal-port> --rm -it <image-name|image-id>:<version> /bin/bash
 
 # sampe
@@ -200,7 +200,7 @@ docker run -p 3306:3306 --rm -it mysql:8 /bin/bash
 
 ---
 ## Build instance
-```shell
+```sh title:command
 docker build -t <instance-name>:<version> . 
 
 # sample
@@ -208,7 +208,7 @@ docker build -t my-new-instance-name:1.0.0 .
 ```
 
 ### Build instance specifying Dockerfile 
-```shell
+```sh title:command
 docker build -t <instance-name>:<version> . -f </path/Dockerfile>
 
 # sample
@@ -219,7 +219,7 @@ docker build -t my-new-instance-name:1.0.0 . -f ./my-folder/Dockerfile
 ## Copy files
 
 ### From local to instance
-```shell
+```sh title:command
 docker cp </local/file.txt> <name|container-id>:</destination/path/inside/docker/file.txt>
 
 # sample
@@ -229,7 +229,7 @@ docker cp ./my-folder/file.txt aae2f44c8c19:/apps/file.txt
 ```
 
 ### From instance to local
-```shell
+```sh title:command
 docker cp <name|container-id>:</path/inside/docker/file.txt> </destination/local/file.txt>
 
 # sample
@@ -243,7 +243,7 @@ docker cp aae2f44c8c19:/apps/file.txt ./my-folder/file.txt
 ## Network
 
 ### Create network
-```shell
+```sh title:command
 docker network create <network-name>
 
 # sample
@@ -251,11 +251,11 @@ docker network create my-network-name
 ```
 
 ### List networks
-```shell
+```sh title:command
 docker network ls
 ```
 #### Run instance with network
-```shell
+```sh title:command
 docker run -d -p <external-port:internal-port> --rm --name <instance-name> --network <network-name> <image-name|image-id>:<version>
 
 # sample
@@ -264,7 +264,7 @@ docker run -d -p 3306:3306 --name my-instance-name -e MYSQL_PASSWORD=12345 --net
 ```
 
 ### Inspect network
-```shell
+```sh title:command
 docker network inspect <network-name>
 
 # sample
@@ -272,7 +272,7 @@ docker network inspect my-network-name
 ```
 
 ### Attach network to existing instance
-```shell
+```sh title:command
 docker network connect <network-name|network-id> <instance-name|container-id>
 
 # sample
@@ -282,7 +282,7 @@ docker network connect 5850a9fe5422 aae2f44c8c19
 ```
 
 ### Detach network from instance
-```shell
+```sh title:command
 docker network disconnect <network-name|network-id> <instance-name|container-id>
 
 # sample
@@ -295,20 +295,30 @@ docker network disconnect 5850a9fe5422 aae2f44c8c19
 ## Volumes
 
 ### List volume
-```shell
+```sh title:command
 docker volume ls
 ```
 
 - Volume associate to a container
-```shell
+```sh title:command
 docker ps -a --filter volume=<volume-name | volume-id>
 
 # sample
 docker ps -a --filter volume=3d762c2860e88d331bcbf79352f10edbdfe3e10632dc0f6a4374979431b0ab08
 ```
 
+#### List orphan volumes
+```sh title:command
+docker volume ls -qf dangling=true
+```
+
+#### Delete all orphan volumes
+```sh title:command
+docker volume rm $(docker volume ls -qf dangling=true)
+```
+
 ### Create volume
-```shell
+```sh title:command
 docker volume create <volume-name>
 
 # sample
@@ -316,7 +326,7 @@ docker volume create my-volume-name
 ```
 
 ### Mount volume
-```shell
+```sh
 docker run -d -p <external-port:internal-port> --name <instance-name> --network <network-name> -v <volume-name>:</instance/docker/path> --restart always <image-name|image-id>:<version>
 
 # sample
@@ -324,3 +334,23 @@ docker run -d -p 3306:3306 --name my-instance-name -e MYSQL_ROOT_PASSWORD=sasa -
 # or
 docker run -d -p 3306:3306 --name my-instance-name -e MYSQL_ROOT_PASSWORD=sasa --network my-network-name -v /home/my-user/db:/var/lib/mysql --restart always mysql:8
 ```
+
+
+## Backup
+
+```sh title:'Stop containers'
+docker ps -q | xargs docker stop
+```
+
+```sh title:'Export containers'
+docker ps -a -q | xargs -I {} sh -c 'docker export -o container-{}.tar {}'
+```
+
+```sh title:'Backup images'
+docker images -q | xargs -I {} sh -c 'docker save -o image-{}.tar {}'
+```
+
+```sh title:'Backup volumes'
+docker volume ls -q | xargs -I {} sh -c 'docker run --rm -v {}:/volume -v $(pwd):/backup ubuntu tar cvf /backup/volume-{}.tar /volume'
+```
+
