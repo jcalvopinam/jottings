@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Obsidian Web Clipper.md",
-                "mode": "source",
+                "file": "Configuración Inicial/Variables/Seguridad.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/Obsidian Web Clipper.md"
+                "file": "Configuración Inicial/Variables/Seguridad.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Obsidian Web Clipper.md",
+                "file": "Configuración Inicial/Variables/Seguridad.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Clippings/Obsidian Web Clipper.md",
+                "file": "Configuración Inicial/Variables/Seguridad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,8 +200,21 @@
   },
   "active": "75bc7c4afe23c8f3",
   "lastOpenFiles": [
+    "Terminal/awk.md",
+    "Docker/OrbStack.md",
+    "Docker/resources/stopping-docker.png",
     "README.md",
     "OpenRewriter/Migrating to Spring Boot.md",
+    "OpenRewriter",
+    "Clippings/Obsidian Web Clipper.md",
+    "Clippings",
+    "Docker/resources/start-container.png",
+    "Docker/resources/orbstack.png",
+    "Docker/resources/migrating-image.png",
+    "Docker/resources/migrate-docker-desktop.png",
+    "Docker/resources/docker-desktop.png",
+    "Docker/resources",
+    "Terminal/Regex.md",
     "0. journals/2024/09-September/06-Sep-2024.md",
     "Configuración Inicial/Variables/Seguridad.md",
     "0. journals/2024/09-September",
@@ -229,22 +242,9 @@
     "0. journals/2024/09-September/assets/Recording 20240905142457.webm",
     "0. journals/2024/09-September/assets",
     "0. journals/2024/08-August/07-Agu-2024.md",
-    "x. templates/Daily summary.md",
-    "0. journals/2024/08-August",
-    "0. journals/2024/02-February/09-Feb-2024.md",
-    "0. journals/2024/02-February",
-    "0. journals/2024/01-January",
-    "0. journals/2024/Sep-05-24.md",
-    "0. journals/2024/Sep-04-24.md",
     "z. personal/Docker/resources/stopping-docker.png",
     "z. personal/Docker/resources/start-container.png",
     "z. personal/Docker/resources/orbstack.png",
-    "z. personal/Docker/resources/migrating-image.png",
-    "z. personal/Docker/resources/migrate-docker-desktop.png",
-    "z. personal/Docker/resources/docker-desktop.png",
-    "z. personal/Docker/resources/Pasted image 20240610094221.png",
-    "resources/Pasted image 20240416094728.png",
-    "2. extras/assets/captcha_bersa.png",
-    "2. extras/assets/captcha_bsc.png"
+    "z. personal/Docker/resources/migrating-image.png"
   ]
 }
