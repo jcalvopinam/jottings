@@ -97,12 +97,17 @@ docker logs -f aae2f44c8c19
 ### Delete instance
 - To delete some instances is required named with spaces
 ```sh title:command
-docker rm <name|container-id> <name|container-id>
+docker rm <name|container-id> <name2|container-id2>
 
 # sample
 docker rm aae2f44c8c19 af8c0ab27b5b f64a00f44fa3
 # or
 docker rm my-instance-name1 my-instance-name2 my-instance-name3
+```
+
+#### Delete instance with volume
+```sh title:command
+docker rm -v <name|container-id>
 ```
 
 #### Delete instance after stop it

@@ -7,7 +7,7 @@ _**Requisitos:**_
 - Tener corriendo el docker desktop con nuestra imagen, tal como lo hacemos siempre.
 - Tener instalado brew (si seguiste el instructivo de armado de ambiente es muy probable que ya lo tengas).
 
-![[docker-desktop.png|600]]
+![[docker-desktop.jpg|600]]
 
 ### Backup (no necesario)
 
@@ -30,7 +30,7 @@ brew install orbstack
 ```
 
 - Posible error al ejecutar el comando:
-![[orbstack.png|600]]
+![[orbstack.jpg|600]]
 
 - Seguramente tengamos Docker dentro de la carpeta Applications. Para asegurarnos, ejecutemos:
 ```shell
@@ -38,7 +38,7 @@ ls /Applications/Docker.app
 ```
 
 - Si vemos una carpeta Contents, entonces la tenemos ahí.
-![[****migrate-docker-desktop.png|600****]]
+![[****migrate-docker-desktop.jpg|600****]]
 
 - Si no encontramos nada, es posible que tengamos la app en otro directorio (tenemos que encontrarlo). Si tenemos la aplicación en esa ruta, ahora ejecutamos:
 ```shell
@@ -58,10 +58,10 @@ brew install orbstack
 ## OrbStack
 
 - Abrimos OrbStack
-![[orbstack.png|600]]
+![[orbstack.jpg|600]]
 
 - Elegimos Docker
-![[migrate-docker-desktop.png|600]]
+![[migrate-docker-desktop.jpg|600]]
 
 - Click en Migrate: 
 Suceden dos cosas:
@@ -69,14 +69,14 @@ Suceden dos cosas:
 1. Se migra la imagen al directorio de OrbStack
 2. Se cierra el Docker Desktop porque a partir de ahora vamos a usar esta aplicación de reemplazo.
 
-![[migrating-image.png|400]]
+![[migrating-image.jpg|400]]
 
-![[stopping-docker.png|400]]
+![[stopping-docker.jpg|400]]
 Listo, se trasladó la imagen de docker a Orbstack.
 
 Levantamos el contenedor:
 
-![[start-container.png|600]]
+![[start-container.jpg|600]]
 
 Si abrimos una nueva terminal y ejecutamos el comando:
 ```java
