@@ -78,7 +78,7 @@ App 10 ^D86sjFja
 Container J ^GkD6xgI5
 
 ## Embedded Files
-c8cd592ff67690103cd04d1e585a828cd0e19d7a: [[k8s-arquitectura.png]]
+c8cd592ff67690103cd04d1e585a828cd0e19d7a: [[k8s-arquitectura.jpg]]
 
 %%
 ## Drawing
