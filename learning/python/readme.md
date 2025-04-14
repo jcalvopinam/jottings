@@ -1,4 +1,4 @@
-# Manage projects :aws
+# Python | Useful commands
 
 ## Create a virtual environment
 You create a virtual environment by calling the `venv` module. The module expects a name as an argument.

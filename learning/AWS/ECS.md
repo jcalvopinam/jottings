@@ -1,3 +1,10 @@
+---
+title: ECS
+date: 2023-05-31
+status: wip
+tags: cluster, task_definition
+---
+
 ## Cluster
 Es como una red general en la que se encuentran todos nuestros servicios, que a su vez cada servicio ejecutan las tareas que contiene contenedores manejando el tráfico de entrada asignado, un puerto específico y una IP pública que se le asigne de forma automática.
 

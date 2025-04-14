@@ -10,6 +10,11 @@
 docker ps -a
 ```
 
+### List volumes with containers
+```sh title:"List all containers with their respective volumes"
+docker ps -a -q | xargs -I {} docker inspect --format '{{.Name}}: {{range .Mounts}}{{if eq .Type "volume"}}{{.Name}}{{end}}{{end}}' {}
+```
+
 ### Start instance
 - To start some instances is required named with spaces
 ```sh title:command
@@ -331,7 +336,7 @@ docker volume create my-volume-name
 ```
 
 ### Mount volume
-```sh
+```sh title:command
 docker run -d -p <external-port:internal-port> --name <instance-name> --network <network-name> -v <volume-name>:</instance/docker/path> --restart always <image-name|image-id>:<version>
 
 # sample

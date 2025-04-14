@@ -1,4 +1,5 @@
-# Format
+# IAM | Policy Structure
+## Format
 | Description                                      | Mandatory | Field                          |
 | ------------------------------------------------ | --------- | ------------------------------ |
 | Language version, it's always 2012-10-17         | true      | "Version": "2012-10-17"        |

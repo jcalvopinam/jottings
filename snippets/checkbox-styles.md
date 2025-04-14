@@ -1,0 +1,24 @@
+[Snippet](https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/Checkboxes%20-%20Minimal%20theme.md)
+
+- [ ] ToDo
+- [/] Incomplete
+- [x] Done
+- [-] Canceled
+- [>] Forwarded
+- [<] Scheduling
+- [?] Question
+- [!] Important
+- [*] Start
+- ["] Quote
+- [l] Location
+- [b] Bookmark
+- [i] Information 
+- [S] Saving
+- [I] Idea
+- [p] Pros
+- [c] Cons
+- [f] Fire
+- [k] Key
+- [w] Win
+- [u] Up
+- [d] Down
